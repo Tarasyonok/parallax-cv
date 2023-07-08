@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 3D Parallax Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span>KIRILL TARASOV</span>
+      <ul>
+        <li>
+          <a href="#contacts">contacts</a>
+        </li>
+        <li><a href="#about-me">about me</a></li>
+        <li><a href="#hard-skills">hard skills</a></li>
+        <li><a href="#work-experience">work experience</a></li>
+        <li><a href="#code-example">code example</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#english">english</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="vignette"></div>
+    <div data-speedx="0" data-speedy="0" data-speedz="0" data-rotation="0" data-distance="0" class="parallax bg"></div>
+    <div data-speedx="0.03" data-speedy="0.03" data-speedz="0.3" data-rotation="0.3" data-distance="-100"
+      class="parallax sun"></div>
+    <img src="img/mountains_9.png" data-speedx="0.05" data-speedy="0.05" data-speedz="0" data-distance="200"
+      data-rotation="0.03" class="parallax mountains-9">
+    <img src="img/mountains_8.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-distance="-550"
+      data-rotation="0.05" class="parallax mountains-8">
+    <h1 data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-distance="-550" data-rotation="0.05" class="parallax">
+      Curriculum vitae</h1>
+    <img src="img/mountains_7.png" data-speedx="0.15" data-speedy="0.15" data-speedz="0" data-distance="-200"
+      data-rotation="0.07" class="parallax mountains-7">
+
+    <img src="img/black.png" class="black">
+
+    <div class="content">
+      <div class="container animate__animated animate__fadeIn">
+        <div class="text-center">
+          <img src="img/my-photo.jpeg" alt="my photo">
+        </div>
+        <h2 class="text-center" id="contacts">Contacts</h2>
+        <ul>
+          <li>Phone number: +7(909)655-20-08</li>
+          <li>Telegram: @tarasyonochek</li>
+          <li>e-mail: kir_tarasov@mail.ru</li>
+        </ul>
+
+        <h2 class="text-center" id="about-me">About me</h2>
+        <p>Hello, I'm Kirill. I'm 15 years old. Next academic year I will go to the ninth grade. I like programming. I
+          am studying the
+          programming language Python and WEB development. I play hockey.</p>
+
+        <section>
+          <h2 class="text-center" id="hard-skills">Languages and technologies I know</h2>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>js</li>
+            <li>bootstrap</li>
+            <li>handlebars</li>
+            <li>npm</li>
+            <li>express</li>
+            <li>NodeJs</li>
+            <li>MongoDB</li>
+            <li>Vue.js</li>
+            <li>git</li>
+            <li>GitHub</li>
+          </ol>
+        </section>
+
+        <h2 class="text-center" id="work-experience">Work experience</h2>
+
+        <p>Familiarization with the scheme of work on Habr Freelance. The work has been completed: information
+          content
+          of the project using automation skills in Python.<br>
+
+          Python voice Assistant: code review, error correction assistance.
+        </p>
+
+
+        <h2 class="text-center" id="code-example">Code example</h2>
+
+        <p>An infinite number of shelves are arranged one above the other in a staggered fashion.
+          The cat can jump either one or three shelves at a time: from shelf i to shelf i+1 or i+3 (the cat cannot
+          climb on the shelf directly above its head)<br>
+          Input:<br>
+          Start and finish shelf numbers (always positive integers, finish no smaller than start)<br>
+
+          Task:<br>
+          Find the minimum number of jumps to go from start to finish
+        </p>
+        <pre>def solution(start, finish):
+ans = 0
+while start &lt; finish:
+  if finish - start == 2:
+      ans += 2
+      break
+  else:
+      ans += 1
+      start += 3
+return ans</pre>
+
+        <h2 id="projects">Projects</h2>
+        <p>
+          I have made projects: <a href="https://github.com/Tarasyonok/vue-projects/tree/main/quiz-project"
+            target="_blank">WEB application "quiz for programmers"</a> and games in
+          pygame: <a href="https://github.com/Tarasyonok/pygame/tree/main/flappy%20bird%20all" target="_blank">flappy
+            bird</a>, <a href="https://github.com/Tarasyonok/pygame/tree/main/Ninja%20Fruit%20game%20all"
+            target="_blank">ninja fruit</a>.
+        </p>
+
+        <section>
+          <h2 class="text-center" id="education">Education</h2>
+
+          <p class="school">(2023) Moscow School of Programmers</p>
+          <span>• Fullstack-developer: from your own website to a full-fledged web application.</span>
+
+          <p class="school">(2023) Yandex Academy Lyceum</p>
+          <span>• Basics of programming in Python. Certificate № 2301 171664.</span>
+
+          <p class="school">(2022) Online courses of the Sirius Educational Center</p>
+          <span>• Introduction to Python programming. Certificate with honors.</span>
+
+          <p class="school">(2022) Foxford Online School</p>
+          <span>• Programming. Preparation for the Olympics, the initial level. grades 5-7.</span><br>
+          <span>• Programming. Preparation for the Olympiads, the average level of grades 7-9.</span><br>
+          <span>• I degree diploma for winning the Olympiad in English, grades 7-8.</span>
+
+          <p class="school">(2022) Educational platform "Stepik"</p>
+          <span>• "Python Generation": a course for beginners. Certificate with honors.</span><br>
+          <span>• Programming in Python. Certificate with honors.</span>
+        </section>
+
+        <h2 class="text-center" id="english">English</h2>
+        <p class="text-center">A2</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+</body>
+
+</html>
